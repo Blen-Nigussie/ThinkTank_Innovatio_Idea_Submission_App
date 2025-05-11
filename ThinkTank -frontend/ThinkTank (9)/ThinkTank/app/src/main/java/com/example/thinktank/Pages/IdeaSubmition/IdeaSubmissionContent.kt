@@ -41,7 +41,7 @@ fun IdeaSubmissionContent(
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Top Bar
+        
         Row(
             modifier = Modifier
                 .fillMaxWidth()
