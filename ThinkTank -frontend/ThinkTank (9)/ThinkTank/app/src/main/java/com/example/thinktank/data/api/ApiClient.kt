@@ -12,7 +12,7 @@ import javax.net.ssl.TrustManager
 import javax.net.ssl.X509TrustManager
 
 object ApiClient {
-    // Change this to your computer's IP address if testing on a physical device
+    
     private const val BASE_URL = "http://10.0.2.2:3444/"
 
     private val trustAllCerts = arrayOf<TrustManager>(object : X509TrustManager {
