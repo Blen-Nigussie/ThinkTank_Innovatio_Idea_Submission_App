@@ -196,4 +196,4 @@ fun RegisterContent(
 @Composable
 fun RegisterPreview() {
     Register(onNavigateToLogin = {}, onNavigateToHome = {})
-} 
+}
