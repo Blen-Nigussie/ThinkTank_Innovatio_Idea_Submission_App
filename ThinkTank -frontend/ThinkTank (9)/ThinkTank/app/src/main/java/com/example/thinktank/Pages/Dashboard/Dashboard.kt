@@ -337,7 +337,7 @@ fun DashboardPreview() {
         setPreviewState(mockIdeas)
     }
 
-    // Create a simple preview without the drawer for testing
+   
     Scaffold(
         topBar = {
             TopAppBar(
