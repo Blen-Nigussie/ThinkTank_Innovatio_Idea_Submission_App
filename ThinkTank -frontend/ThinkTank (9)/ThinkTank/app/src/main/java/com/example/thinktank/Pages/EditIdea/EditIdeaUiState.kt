@@ -9,4 +9,4 @@ data class EditIdeaUiState(
     val isUpdating: Boolean = false,
     val updateSuccess: Boolean = false,
     val error: String? = null
-) 
+)
