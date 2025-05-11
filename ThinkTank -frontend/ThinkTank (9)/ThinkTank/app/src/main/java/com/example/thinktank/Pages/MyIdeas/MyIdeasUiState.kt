@@ -7,4 +7,4 @@ data class MyIdeasUiState(
     val isLoading: Boolean = false,
     val error: String? = null,
     val navigationEvent: NavigationEvent? = null
-) 
+)
