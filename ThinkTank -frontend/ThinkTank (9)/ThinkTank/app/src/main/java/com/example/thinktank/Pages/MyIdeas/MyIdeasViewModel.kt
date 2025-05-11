@@ -120,4 +120,4 @@ class MyIdeasViewModel(application: Application) : AndroidViewModel(application)
 
 sealed class NavigationEvent {
     data class EditIdea(val idea: Idea) : NavigationEvent()
-} 
+}
