@@ -143,4 +143,4 @@ class EditIdeaViewModel(application: Application) : AndroidViewModel(application
             else -> true
         }
     }
-} 
+}
