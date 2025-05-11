@@ -8,4 +8,4 @@ data class IdeasUiState(
     val error: String? = null,
     val isDeleting: Boolean = false,
     val deletingIdeaId: String? = null
-) 
+)
