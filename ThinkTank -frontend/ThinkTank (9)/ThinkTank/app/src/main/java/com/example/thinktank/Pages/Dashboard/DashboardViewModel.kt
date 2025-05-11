@@ -45,17 +45,17 @@ class DashboardViewModel : ViewModel() {
                     val allFeedback = feedbackResponse.body()!!
                     println("Total feedback received: ${allFeedback.size}")
                     
-                    // Filter for approved feedback
+                    
                     val approvedFeedback = allFeedback.filter { feedback -> 
                         feedback.status == FeedbackStatus.Approved && feedback.idea != null 
                     }
                     println("Approved feedback: ${approvedFeedback.size}")
                     
-                    // Get unique idea IDs from approved feedback
+
                     val approvedIdeaIds = approvedFeedback.mapNotNull { it.idea?.id }.distinct()
                     println("Unique approved idea IDs: ${approvedIdeaIds.size}")
                     
-                    // Get all ideas and filter for approved ones
+
                     val ideasResponse = ApiClient.ideaApi.getAllIdeas(formattedToken)
                     if (ideasResponse.isSuccessful && ideasResponse.body() != null) {
                         val allIdeas = ideasResponse.body()!!
@@ -81,7 +81,7 @@ class DashboardViewModel : ViewModel() {
                         )
                     }
                 } else {
-                    // Regular user flow - use public ideas endpoint
+                   
                     println("Regular user flow: Getting public ideas")
                     try {
                         val publicResponse = ApiClient.ideaApi.getPublicIdeas()
