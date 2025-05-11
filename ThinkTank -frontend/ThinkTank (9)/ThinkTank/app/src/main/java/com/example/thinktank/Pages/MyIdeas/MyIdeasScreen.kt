@@ -303,4 +303,4 @@ fun IdeaCard(
 
 private fun formatDate(date: Date): String {
     return SimpleDateFormat("MMM dd, yyyy", Locale.getDefault()).format(date)
-} 
+}
